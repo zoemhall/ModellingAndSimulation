@@ -1,0 +1,191 @@
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[         0,          0]
+NotebookDataLength[      7794,        190]
+NotebookOptionsPosition[      6977,        164]
+NotebookOutlinePosition[      7368,        180]
+CellTagsIndexPosition[      7325,        177]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Looking", " ", "for", " ", "stationary", " ", "points"}], " ", 
+   "*)"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"Notebook", "[", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{"Manipulate", "[", 
+     RowBox[{"(*", 
+      RowBox[{"equations", " ", "for", " ", 
+       RowBox[{"s", "'"}], " ", "and", " ", 
+       RowBox[{"i", "'"}]}], "*)"}], "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"StreamPlot", "[", 
+       RowBox[{
+        RowBox[{"{", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "s"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"R0", "*", "i"}], "+", "rho"}], ")"}]}], ",", 
+          RowBox[{"(*", 
+           RowBox[{"ds", "/", "d\[Tau]"}], "*)"}], "\[IndentingNewLine]", 
+          RowBox[{"i", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"R0", "*", "s"}], "-", "1"}], ")"}]}]}], "   ", 
+         RowBox[{"(*", 
+          RowBox[{"di", "/", "d\[Tau]"}], "*)"}], "}"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"(*", 
+         RowBox[{"Define", " ", "the", " ", "plot", " ", "boundaries"}], 
+         "*)"}], "\[IndentingNewLine]", 
+        RowBox[{"{", 
+         RowBox[{"s", ",", "0", ",", "1"}], "}"}], ",", "\[IndentingNewLine]", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", "0", ",", "1"}], "}"}], ",", "\[IndentingNewLine]", 
+        RowBox[{"AxesLabel", "->", 
+         RowBox[{"{", 
+          RowBox[{"\"\<s (Susceptible)\>\"", ",", "\"\<i (Infective)\>\""}], 
+          "}"}]}], ",", "\[IndentingNewLine]", 
+        RowBox[{
+        "PlotLabel", 
+         "->", "\"\<Percentage of susceptible and infective players\>\""}], ",",
+         "\[IndentingNewLine]", 
+        RowBox[{"ImageSize", "->", "Medium"}], ",", 
+        RowBox[{"PlotRange", "->", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0", ",", "1"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Epilog", "->", 
+         RowBox[{"{", 
+          RowBox[{"Red", ",", 
+           RowBox[{"PointSize", "[", "Large", "]"}], ",", 
+           RowBox[{"Point", "[", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0"}], "}"}], "]"}]}], "  ", 
+          "\[IndentingNewLine]", "}"}]}]}], "]"}], ",", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"R0", ",", "3", ",", "\"\<R0 (Basic Reproduction No.)\>\""}],
+          "}"}], ",", "0", ",", "5", ",", 
+        RowBox[{"Appearance", "->", "\"\<Labeled\>\""}]}], "}"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"rho", ",", "0.1", ",", "\"\<\[Rho] (Removal Rate)\>\""}], 
+         "}"}], ",", "0", ",", "1", ",", 
+        RowBox[{"Appearance", "->", "\"\<Labeled\>\""}]}], "}"}]}], "]"}], 
+    "\[IndentingNewLine]", "}"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.9722902424028463`*^9, 3.972290249618496*^9}, 
+   3.972290354463168*^9, {3.972290790776198*^9, 3.972290916750375*^9}, {
+   3.9722909845755367`*^9, 3.9722909904881067`*^9}, {3.972291534497048*^9, 
+   3.972291540663624*^9}, {3.972808001535643*^9, 
+   3.9728080878594522`*^9}},ExpressionUUID->"6aad3137-f1df-47fc-8b08-\
+723c276a4115"],
+
+Cell[BoxData[
+ RowBox[{"Notebook", "[", 
+  RowBox[{"{", 
+   TagBox[
+    StyleBox[
+     DynamicModuleBox[{$CellContext`R0$$ = 3, $CellContext`rho$$ = 0.1, 
+      Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+      Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ =
+       1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
+         Hold[$CellContext`R0$$], 3, "R0 (Basic Reproduction No.)"}, 0, 5, 
+        ControlType -> Manipulator}, {{
+         Hold[$CellContext`rho$$], 0.1, "\[Rho] (Removal Rate)"}, 0, 1, 
+        ControlType -> Manipulator}}, Typeset`size$$ = {
+      360., {181.7900390625, 187.52197265625}}, Typeset`update$$ = 0, 
+      Typeset`initDone$$, Typeset`skipInitDone$$ = True, 
+      Typeset`keyframeActionsQ$$ = False, Typeset`keyframeList$$ = {}}, 
+      DynamicBox[Manipulate`ManipulateBoxes[
+       1, StandardForm, 
+        "Variables" :> {$CellContext`R0$$ = 3, $CellContext`rho$$ = 0.1}, 
+        "ControllerVariables" :> {}, 
+        "OtherVariables" :> {
+         Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+          Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+          Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
+          Typeset`initDone$$, Typeset`skipInitDone$$, 
+          Typeset`keyframeActionsQ$$, Typeset`keyframeList$$}, "Body" :> 
+        StreamPlot[{(-$CellContext`s) ($CellContext`R0$$ $CellContext`i + \
+$CellContext`rho$$), $CellContext`i ($CellContext`R0$$ $CellContext`s - 
+            1)}, {$CellContext`s, 0, 1}, {$CellContext`i, 0, 1}, 
+          AxesLabel -> {"s (Susceptible)", "i (Infective)"}, PlotLabel -> 
+          "Percentage of susceptible and infective players", ImageSize -> 
+          Medium, PlotRange -> {{0, 1}, {0, 1}}, Epilog -> {Red, 
+            PointSize[Large], 
+            Point[{0, 0}]}], 
+        "Specifications" :> {{{$CellContext`R0$$, 3, 
+            "R0 (Basic Reproduction No.)"}, 0, 5, Appearance -> 
+           "Labeled"}, {{$CellContext`rho$$, 0.1, "\[Rho] (Removal Rate)"}, 0,
+            1, Appearance -> "Labeled"}}, "Options" :> {}, 
+        "DefaultOptions" :> {}],
+       ImageSizeCache->{409.1, {244.26046447753907`, 249.99239807128907`}},
+       SingleEvaluation->True],
+      Deinitialization:>None,
+      DynamicModuleValues:>{},
+      SynchronousInitialization->True,
+      UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+      UnsavedVariables:>{Typeset`initDone$$},
+      UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+     Deployed->True,
+     StripOnInput->False],
+    Manipulate`InterpretManipulate[1]], "}"}], "]"}]], "Output",
+ CellChangeTimes->{3.9722904860525713`*^9, 3.972290921092844*^9, 
+  3.972290993077312*^9, 3.9722915424780073`*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"c84ee025-5f85-4382-8245-b8400ac53aa9"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.972290425156024*^9, 
+  3.972290425835105*^9}},ExpressionUUID->"3acc4076-488a-4f36-b1a6-\
+740c250f0c87"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.972290427456356*^9, 
+  3.9722904290505543`*^9}},ExpressionUUID->"0944166f-a1fd-4e61-b2a7-\
+02f88a7026b0"]
+},
+WindowSize->{1470, 839},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"14.3 for Mac OS X ARM (64-bit) (July 8, 2025)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"cf346cc9-ba71-4294-8b74-d8101bdf500d"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[422, 15, 3403, 82, 376, "Input",ExpressionUUID->"6aad3137-f1df-47fc-8b08-723c276a4115"],
+Cell[3828, 99, 2821, 52, 511, "Output",ExpressionUUID->"c84ee025-5f85-4382-8245-b8400ac53aa9"]
+}, Open  ]],
+Cell[6664, 154, 152, 3, 29, "Input",ExpressionUUID->"3acc4076-488a-4f36-b1a6-740c250f0c87"],
+Cell[6819, 159, 154, 3, 29, "Input",ExpressionUUID->"0944166f-a1fd-4e61-b2a7-02f88a7026b0"]
+}
+]
+*)
+

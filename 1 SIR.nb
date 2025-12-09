@@ -1,0 +1,139 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      3846,        131]
+NotebookOptionsPosition[      3129,        109]
+NotebookOutlinePosition[      3541,        126]
+CellTagsIndexPosition[      3498,        123]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["1 Base SIR model", "Subtitle",
+ CellChangeTimes->{{3.974035476402934*^9, 
+  3.974035480523357*^9}},ExpressionUUID->"70619bbc-f51a-42be-8c08-\
+4a422e3f72df"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"eq1", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "R0"}], "*", "s", "*", "i"}], "-", 
+     RowBox[{"rho", "*", "s"}]}], "==", "0"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"eq2", "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"R0", "*", "s", "*", "i"}], "-", "i"}], "==", "0"}]}], ";"}], 
+  "\n", "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"Solve", " ", "for", " ", "s", " ", "and", " ", "i"}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"solutions", "=", 
+   RowBox[{"Solve", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"eq1", ",", "eq2"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"s", ",", "i"}], "}"}]}], "]"}]}], "\n", "\[IndentingNewLine]", 
+  
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+     "Calculate", " ", "r", " ", "for", " ", "each", " ", "solution", " ", 
+      "using", " ", "the", " ", "constraint", " ", "s"}], "+", "i", "+", 
+     "r"}], "=", "1"}], "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{"stationaryPoints", "=", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"s", ",", "i", ",", 
+     RowBox[{"1", "-", "s", "-", "i"}]}], "}"}], "/.", " ", 
+   "solutions"}]}]}], "Input",
+ CellChangeTimes->{{3.974035593563602*^9, 3.974035593565022*^9}, 
+   3.974035650400517*^9},ExpressionUUID->"b02f2000-7d39-4326-858e-\
+dc9f9eff2cc3"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"s", "\[Rule]", "0"}], ",", 
+     RowBox[{"i", "\[Rule]", "0"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"s", "\[Rule]", 
+      FractionBox["1", "R0"]}], ",", 
+     RowBox[{"i", "\[Rule]", 
+      RowBox[{"-", 
+       FractionBox["rho", "R0"]}]}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.9740355945974007`*^9},
+ CellLabel->
+  "Out[131]=",ExpressionUUID->"1e76424d-109a-42d0-95ec-67db494e3f9a"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["1", "R0"], ",", 
+     RowBox[{"-", 
+      FractionBox["rho", "R0"]}], ",", 
+     RowBox[{"1", "-", 
+      FractionBox["1", "R0"], "+", 
+      FractionBox["rho", "R0"]}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.974035594600565*^9},
+ CellLabel->
+  "Out[132]=",ExpressionUUID->"7222e692-de76-401a-a1d6-37db32e8da99"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 738},
+WindowMargins->{{28, Automatic}, {36, Automatic}},
+LightDark->"Light",
+FrontEndVersion->"14.3 for Mac OS X ARM (64-bit) (July 8, 2025)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"953cfff1-340a-478f-83ee-5128ac687199"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 162, 3, 52, "Subtitle",ExpressionUUID->"70619bbc-f51a-42be-8c08-4a422e3f72df"],
+Cell[CellGroupData[{
+Cell[763, 29, 1349, 41, 172, "Input",ExpressionUUID->"b02f2000-7d39-4326-858e-dc9f9eff2cc3"],
+Cell[2115, 72, 503, 16, 47, "Output",ExpressionUUID->"1e76424d-109a-42d0-95ec-67db494e3f9a"],
+Cell[2621, 90, 480, 15, 47, "Output",ExpressionUUID->"7222e692-de76-401a-a1d6-37db32e8da99"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
